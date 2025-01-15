@@ -2,6 +2,8 @@ import React from "react"; // 1. Import react
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
+import Navbar from "./Navbar";
+import {Footer} from "./Footer.jsx"
 
 //2. Create your first component with PascalCase
 const Home = () => {
@@ -11,6 +13,7 @@ const Home = () => {
 	//4. Return a single JS component
 	return (
 		<div className="text-center">
+			<Navbar/>
 			<h1 className="text-center mt-5">Hello Rigo!</h1>
 			<p>
 				<img src={rigoImage} />
@@ -23,6 +26,7 @@ const Home = () => {
 				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
 				love!
 			</p>
+			<Footer/>
 		</div>
 	);
 };
